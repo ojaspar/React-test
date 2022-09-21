@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TodoLogo from '../../assets/images/todo-logo.svg';
 import '../../styles/Sidebar.css';
+import '../../index.css'
 import { ReactComponent as DashboardIcon } from '../../assets/images/dashboard.svg';
 import { ReactComponent as FolderIcon } from '../../assets/images/folders.svg';
 import { ReactComponent as SettingsIcon } from '../../assets/images/settings.svg';
@@ -20,7 +21,7 @@ function LayoutSideBar({ gridArea }) {
 	];
 	return (
 		<div className={`${gridArea} sidebarLayout`}>
-			<img src={TodoLogo} alt='togo-logo' />
+			<img src={TodoLogo} alt='togo-logo' className='cursor' />
 			<h2>To-Do</h2>
 			<ul>
 				{icons.map((icon, index) => (

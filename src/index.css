@@ -17,3 +17,8 @@ code {
     monospace;
 }
 
+
+
+.cursor{
+  cursor: pointer;
+}
