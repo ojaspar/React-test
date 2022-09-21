@@ -1,25 +1,204 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import LayoutHeader from '../src/components/defaultLayouts/LayoutHeader';
+import LayoutSideBar from '../src/components/defaultLayouts/LayoutSideBar';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<main className='container'>
+			<LayoutHeader />
+			<LayoutSideBar />
+			<div className='main'>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+				voluptates tenetur recusandae, a dolores laboriosam dolorum veritatis
+				beatae esse odio rerum voluptatum, ex dolore alias blanditiis? Vero
+				quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque! Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque! Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Quis voluptates tenetur
+				recusandae, a dolores laboriosam dolorum veritatis beatae esse odio
+				rerum voluptatum, ex dolore alias blanditiis? Vero quidem natus
+				doloremque!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Quis voluptates tenetur recusandae, a dolores laboriosam dolorum
+				veritatis beatae esse odio rerum voluptatum, ex dolore alias blanditiis?
+				Vero quidem natus doloremque!Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Quis voluptates tenetur recusandae, a dolores
+				laboriosam dolorum veritatis beatae esse odio rerum voluptatum, ex
+				dolore alias blanditiis? Vero quidem natus doloremque!
+			</div>
+		</main>
+	);
 }
 
 export default App;
