@@ -55,8 +55,8 @@ function Task() {
 			<div>
 				<p>Add Collaborators</p>
 				<div className='collaborator-container'>
-					{collaborators.map((collaborator) => (
-						<div className='collaborator'>
+					{collaborators.map((collaborator, index) => (
+						<div className='collaborator' key={index}>
 							<img src={collaborator.image} alt={collaborator.name} />
 							<p>{collaborator.name}</p>
 							<p className='cursor'>X</p>
@@ -94,8 +94,8 @@ function Task() {
 			<div className='rule' />
 			<h2>Messages</h2>
 			<div>
-                {messages.map((message) => (
-                    <div  className='message-container cursor'>
+                {messages.map((message, index) => (
+                    <div key={index} className='message-container cursor'>
                        <div className='message'>
                         <img src={message.image} alt=""  />
                         </div>
