@@ -39,23 +39,32 @@
 
 .container {
   display: grid;
-  grid-template-areas: 'menu header '
-    'menu main';
+  grid-template-areas: 'menu header header'
+    'menu main side';
     overflow: hidden;
     position: fixed;
 }
 
-.header{
+.container >.side{
+  grid-area: side;
+  height: 100vh;
+  width: 20vw;
+  padding: 20px 25px;
+  background: var(--white);
+  overflow-y: scroll;
+}
+
+.container >.header{
   grid-area: header;
   height: min-content;
 }
-.sidebar {
+.container > .sidebar {
   grid-area: menu;
   height: 100vh;
   background: var(--side-bar-main);
   padding: 30px 20px;
 }
-.main{
+.container> .main{
   grid-area: main;
   overflow-y: scroll;
   height: 100vh;
