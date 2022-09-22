@@ -95,7 +95,7 @@ function Task() {
 			<h2>Messages</h2>
 			<div>
                 {messages.map((message) => (
-                    <div  className='message-container'>
+                    <div  className='message-container cursor'>
                        <div className='message'>
                         <img src={message.image} alt=""  />
                         </div>
