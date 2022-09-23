@@ -47,8 +47,13 @@ function TaskTable() {
                                 </th>
                             </tr>
                         })}
+                        
 					</tbody>
-				</table>
+                </table>
+                {state.length === 0 && ( <div>
+                            <h2  style={{textAlign:'center', marginTop: '20px'}}>Add New Task</h2>
+                        </div>)}
+               
 			</Card>
 		</div>
 	);

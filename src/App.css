@@ -64,14 +64,14 @@
   height: 100vh;
   background: var(--side-bar-main);
   padding: 30px 20px;
-  width: 6vw;
+  width: 7vw;
 }
 .container> .main{
   grid-area: main;
   overflow-y: scroll;
   height: 91vh;
   padding: 20px;
-  width: 74vw;
+  width: 72vw;
   margin: 0 auto;
 
 }
