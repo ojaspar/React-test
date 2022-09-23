@@ -21,7 +21,7 @@ const CustomSelect = () => {
     setdefaultText(data.defaultSelectText);
   };
   return (
-    <div className="container">
+    <div className="">
       <div className="custom-select-container" onClick={toggleList}>
         {defaultText}
         {isListOpen ? (
