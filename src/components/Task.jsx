@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import '../styles/Article.css';
 import '../index.css';
 import Input from '../components/ui/Input';
@@ -7,44 +7,47 @@ import Chris from '../assets/images/chris.svg';
 import webber from '../assets/images/webber.svg';
 import kelvin from '../assets/images/kelvin.svg';
 import Button from '../components/ui/Button';
-import TaskContext from '../context/TaskContext'
-import {taskFormType, INITIAL_STATE} from '../context/TaskReducer'
+import TaskContext from '../context/TaskContext';
+import { taskFormType, INITIAL_STATE } from '../context/TaskReducer';
 function Task() {
-    const [taskState, setTaskState] = useState(INITIAL_STATE)
-    const collaborators = [
-        {
-            name: 'Angela',
-            image: Angela,
-            id: 1,
-        },
-        {
-            name: 'Chris',
-            image: Chris,
-            id: 2,
-        },
-    ];
-    const messages = [
-        {
-            name: 'Chris Webber',
-            message: 'Hi Michael! How are you?',
-            image: webber,
-            id: 1,
-        },
-        {
-            name: 'Kelvin Durant',
-            message: 'Do you need that design?',
-            image: kelvin,
-            id: 1,
-        },
-    ];
-    const emojis = ['🎉', '😍', '😄', '🔥', '😘', '😋', '😉', '😎', '🙄'];
-    const { dispatch } = useContext(TaskContext);
-    const addTask = () => {
-        dispatch({ type: taskFormType.ADD_TASK, payload: taskState })
-}
+    const [taskForm, setTaskForm] = useState(INITIAL_STATE);
+	const collaborators = [
+		{
+			name: 'Angela',
+			image: Angela,
+			id: 1,
+		},
+		{
+			name: 'Chris',
+			image: Chris,
+			id: 2,
+		},
+	];
+	const messages = [
+		{
+			name: 'Chris Webber',
+			message: 'Hi Michael! How are you?',
+			image: webber,
+			id: 1,
+		},
+		{
+			name: 'Kelvin Durant',
+			message: 'Do you need that design?',
+			image: kelvin,
+			id: 1,
+		},
+	];
+	const emojis = ['🎉', '😍', '😄', '🔥', '😘', '😋', '😉', '😎', '🙄'];
+    const { state , dispatch } = useContext(TaskContext);
+    const allTasks = state;
+	const addTask = () => {      
+        allTasks.push(taskForm);
+        dispatch({ type: taskFormType.ADD_TASK, payload: allTasks });
+        setTaskForm(INITIAL_STATE)
+	};
 	const onInputChange = (e) => {
 		const { name, value } = e.target;
-        setTaskState((prevValue) => ({ ...prevValue, [name]: value }));
+		setTaskForm((prevValue) => ({ ...prevValue, [name]: value }));
 	};
 	return (
 		<div className='task-container'>
@@ -52,7 +55,7 @@ function Task() {
 			<Input
 				attributes={{
 					placeholder: 'Create new',
-					value: `${taskState.task}`,
+					value: `${taskForm.task}`,
 					name: 'task',
 				}}
 				handleChange={onInputChange}
@@ -93,7 +96,7 @@ function Task() {
 							name: 'startDate',
 							placeholder: 'Start Date',
 							type: 'date',
-							value: `${taskState.startDate}`,
+							value: `${taskForm.startDate}`,
 						}}
 						handleChange={onInputChange}
 					/>
@@ -105,7 +108,7 @@ function Task() {
 							name: 'endDate',
 							type: 'date',
 							placeholder: 'End Date',
-							value: `${taskState.endDate}`,
+							value: `${taskForm.endDate}`,
 						}}
 						handleChange={onInputChange}
 					/>
@@ -118,7 +121,7 @@ function Task() {
 				<Input
 					attributes={{
 						placeholder: 'Enter Hours',
-						value: `${taskState.hours}`,
+						value: `${taskForm.hours}`,
 						name: 'hours',
 					}}
 					handleChange={onInputChange}
@@ -134,11 +137,14 @@ function Task() {
 					<div style={{ width: '77px' }}>
 						<Button
 							isDisabled={
-								taskState.task && taskState.startDate && taskState.endDate && taskState.hours
+								taskForm.task &&
+								taskForm.startDate &&
+								taskForm.endDate &&
+								taskForm.hours
 									? false
 									: true
 							}
-                            handleClick={addTask}
+							handleClick={addTask}
 						>
 							Save
 						</Button>
