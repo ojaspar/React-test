@@ -15,7 +15,7 @@ function LayoutSideBar({ gridArea }) {
 		{
 			element: <DashboardIcon className='icon' />,
 			active: true,
-			path: '/',
+			path: '/'
 		},
 		{
 			element: <AllIcon className='icon' />,
@@ -45,7 +45,6 @@ function LayoutSideBar({ gridArea }) {
 			active: false,
 			path: '/',
 		},
-		,
 	];
 	return (
 		<div className={`${gridArea} sidebarLayout`}>
