@@ -3,7 +3,7 @@ import '../styles/Graph.css';
 import Graph from '../assets/images/graph.svg';
 import Value from '../assets/images/value.svg';
 import Month from '../assets/images/month.svg';
-
+import Card from '../components/ui/Card'
 function TaskGraph() {
 	const [durations, setDuration] = useState([
 		{
@@ -30,7 +30,7 @@ function TaskGraph() {
 		setDuration([...newDuration]);
 	};
 	return (
-		<div className='graph-container'>
+		<Card className='graph-container'>
 			<div className='graph-header'>
 				<h2>Task Done</h2>
 				<div className='duration-container'>
@@ -57,7 +57,7 @@ function TaskGraph() {
                     <img style={{width: '100%'}} src={Month} alt="month" />
                 </div>
 			</div>
-		</div>
+		</Card>
 	);
 }
 

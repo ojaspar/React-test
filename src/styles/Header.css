@@ -6,16 +6,16 @@
 }
 
 .navbar-default .search {
-	width: 80vw;
+	width: 81vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 }
 .navbar-default .notification {
-	width: 10vw;
+	width: 11vw;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 .navbar-default input {

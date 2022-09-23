@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/Input.css'
 import PropTypes from 'prop-types';
 
-function Input({ attributes, handleBlur, handleChange }) {
+function Input({ attributes, handleBlur, handleChange, handleFocus }) {
     const {
 		placeholder,
 		value,
@@ -12,16 +12,17 @@ function Input({ attributes, handleBlur, handleChange }) {
 		disabled,
 		type,
 		required
-	} = attributes;
+    } = attributes;
   return (
       <>
          <input
 				placeholder={placeholder}
-				className={`${inputClass}`}
+				className={` input ${inputClass}`}
 				type={type}
 				disabled={disabled}
 				onBlur={(e) => handleBlur(e)}
-				onChange={(e) => handleChange(e)}
+              onChange={(e) => handleChange(e)}
+                
 				value={value}
 				id={id}
 				name={name}
@@ -43,14 +44,16 @@ Input.defaultProps = {
 		required: false
 	},
 	handleChange: () => {},
-	handleBlur: () => { },
+    handleBlur: () => { },
+    handleFocus: () => { },
 	type: 'text'
 };
 
 Input.propTypes = {
 	attributes: PropTypes.object,
 	handleBlur: PropTypes.func,
-	handleChange: PropTypes.func
+    handleChange: PropTypes.func,
+    handleFocus: PropTypes.func
 };
 
 export default Input

@@ -32,14 +32,12 @@ h2 {
 	box-sizing: border-box;
 }
 .task-container p {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 14px;
 	line-height: 18px;
 	color: var(--green-gray);
-	/* margin-bottom: 18px; */
 }
 .task-container > .emoji-container {
-	/* margin: 16px 0; */
 	border-bottom: 2px solid #e8edf1;
 }
 .task-container > .emoji-container > .emojis > .arrows {
@@ -49,7 +47,6 @@ h2 {
 
 .task-container > .emoji-container > .emojis {
 	width: 100%;
-	/* margin-bottom: 19px; */
 }
 
 .collaborator-container {
@@ -121,21 +118,19 @@ h2 {
      font-weight: 900;
 }
 
-.complete-form{
-    /* margin-top: 16px; */
-}
 .input-top{
-    margin-top: 20px;
+    margin-top: 33px;
 }
 .rule{
     margin: 16px 0;
-        border-bottom: 2px solid #e8edf1;
+    border-bottom: 2px solid #e8edf1;
 }
 
 .message-container{
     display: flex;
     align-items: center;
     margin-top: 16px;
+
 }
 .message{
     height: 55px;

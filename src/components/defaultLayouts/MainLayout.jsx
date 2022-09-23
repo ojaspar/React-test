@@ -9,6 +9,7 @@ import CompletedWave from '../../assets/images/completed-wave.svg';
 import ProjectWave from '../../assets/images/project-wave.svg';
 import TaskWave from '../../assets/images/task-wave.svg';
 import TaskGraph from '../../components/TaskGraph';
+import TaskTable from '../../components/TaskTable'
 function MainLayout({ gridArea }) {
 	const tasks = [
 		{
@@ -42,7 +43,7 @@ function MainLayout({ gridArea }) {
 					})}
                 </div>
             <TaskGraph/>
-                
+                <TaskTable/>
             </div>
 		</div>
 	);

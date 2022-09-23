@@ -1,4 +1,4 @@
-input {
+.input {
     width: 100%;
     border: none;
     border-radius: 7px;
@@ -10,7 +10,7 @@ input {
     height: 45px;
     padding: 0 10px;
 }
-input::placeholder {
+.input::placeholder {
     color: var(--input-gray);
     font-weight: 400;
     font-size: 14px;
