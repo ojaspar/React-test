@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TodoLogo from '../../assets/images/todo-logo.svg';
 import '../../styles/Sidebar.css';
-import '../../index.css'
+import '../../index.css';
 import { ReactComponent as DashboardIcon } from '../../assets/images/dashboard.svg';
 import { ReactComponent as FolderIcon } from '../../assets/images/folders.svg';
 import { ReactComponent as SettingsIcon } from '../../assets/images/settings.svg';
@@ -12,12 +12,40 @@ import { ReactComponent as AllIcon } from '../../assets/images/all.svg';
 
 function LayoutSideBar({ gridArea }) {
 	const icons = [
-		<DashboardIcon className='icon' />,
-		<AllIcon className='icon' />,
-		<TodosIcon className='icon' />,
-		<SettingsIcon className='icon' />,
-		<ArrowIcon className='icon' />,
-		<FolderIcon className='icon' />,
+		{
+			element: <DashboardIcon className='icon' />,
+			active: true,
+			path: '/',
+		},
+		{
+			element: <AllIcon className='icon' />,
+			active: false,
+			path: '/',
+		},
+		{
+			element: <TodosIcon className='icon' />,
+
+			active: false,
+			path: '/',
+		},
+		{
+			element: <SettingsIcon className='icon' />,
+
+			active: false,
+			path: '/',
+		},
+		{
+			element: <ArrowIcon className='icon' />,
+
+			active: false,
+			path: '/',
+		},
+		{
+			element: <FolderIcon className='icon' />,
+			active: false,
+			path: '/',
+		},
+		,
 	];
 	return (
 		<div className={`${gridArea} sidebarLayout`}>
@@ -25,7 +53,7 @@ function LayoutSideBar({ gridArea }) {
 			<h2>To-Do</h2>
 			<ul>
 				{icons.map((icon, index) => (
-					<li key={index}>{icon}</li>
+					<li key={index} className={icon.active && 'active'}>{icon.element}</li>
 				))}
 			</ul>
 		</div>

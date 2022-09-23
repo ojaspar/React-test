@@ -43,6 +43,15 @@ icon, svg{
     fill: #5F6388;
 }
 
+icon,
+svg {
+    fill: #5F6388;
+}
+
+.active > .icon {
+    color: white;
+        fill: white;
+}
 .sidebarLayout>ul>li:hover svg{
     fill: white
 }
