@@ -11,7 +11,9 @@ export const INITIAL_STATE = {
 export const taskFormReducer = (state, action) => {
 	switch (action.type) {
 		case taskFormType.ADD_TASK:
-			return action.payload;
+			let tasks = [];
+			tasks.push(...action.payload);
+			return tasks;
 		default:
 			return state;
 	}

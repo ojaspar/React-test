@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import Card from '../components/ui/Card';
 import '../styles/Table.css';
 import CustomSelect from './ui/CustomSelect';
@@ -6,19 +6,7 @@ import MenuDropDown from './ui/MenuDropDown';
 import TaskContext from '../context/TaskContext';
 
 function TaskTable() {
-	const { state } = useContext(TaskContext);
-
-	const [tasks, setTask] = useState([]);
-    let ArrayTasks = [];
-    if (state) {
-			ArrayTasks.push(state);
-			setTask(ArrayTasks);
-		}
-	console.log(state);
-	// useEffect(() => {
-		
-		
-	// }, [ArrayTasks]);
+    const { state } = useContext(TaskContext);
 
 	return (
 		<div style={{ marginTop: '31px' }}>
@@ -39,35 +27,26 @@ function TaskTable() {
 						</tr>
 					</thead>
 					<tbody>
-						{/* <tr>
-							<th>User journey of the project</th>
-							<th>Start Date</th>
-							<th>End Date</th>
-							<th>Hours</th>
-							<th className='column'>
-								<label htmlFor='file'>Downloading progress:</label>
-								<progress id='file' value='32' max='100' color='red'>
-								
-								</progress>
-                            </th>
-                            <th>
-                                <MenuDropDown/>
 
-                            </th>
-						</tr> */}
-
-						{tasks.map((task, i) => (
-							<tr key={i}>
-								<th>{task.task}</th>
-								<th>{task.startDate}</th>
-								<th>{task.endDate}</th>
-								<th>{task.hours}</th>
-								<th>Progress</th>
-								<th>
-									<MenuDropDown />
-								</th>
-							</tr>
-						))}
+                        {state.map((task, i) => {
+                            return <tr key={i}>
+                                <th>{task.task}</th>
+                                <th>{task.startDate}</th>
+                                <th>{task.endDate}</th>
+                                <th>{task.hours}</th>
+                                <th>
+                                    <div className='progress-container'>
+                                        <p>60% completed</p>
+                                        <div className='progress'>
+                                            <div className='bar'></div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <MenuDropDown />
+                                </th>
+                            </tr>
+                        })}
 					</tbody>
 				</table>
 			</Card>
