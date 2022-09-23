@@ -1,0 +1,5 @@
+.graph-container {
+	background: var(--white);
+	border-radius: 16px;
+	padding: 30px 30px;
+}

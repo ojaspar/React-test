@@ -1,0 +1,58 @@
+.taskCardHeader {
+	display: flex;
+	align-items: center;
+}
+.taskCard {
+	border-radius: 16px;
+	background: var(--white);
+	/* height: 153px; */
+	width: 315px;
+	padding: 0 30px;
+}
+.taskCard > .taskCardHeader > .t-icon {
+	height: 34px;
+	width: 34px;
+	background: #f3f7fd;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+h3 {
+	font-size: 16px;
+	line-height: 21px;
+	color: #8c97a8;
+	font-weight: 500;
+}
+.taskCard > .taskCardHeader > div:nth-child(2) {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+}
+.taskCard > .rule {
+	margin: 5px 0;
+	border-bottom: 2px solid #e8edf1;
+}
+
+.taskCard > .taskFooter {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+	justify-content: space-between;
+}
+.taskCard > .taskFooter > p {
+	text-align: right;
+	width: 113px;
+    font-size: 16px;
+        line-height: 21px;
+padding-bottom: 20px;
+	font-weight: 500;
+}
+.taskCard > .taskFooter > p > span {
+	color: #299702;
+	font-weight: 700;
+	
+}
+
+/* .ta */

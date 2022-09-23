@@ -1,0 +1,61 @@
+.graph-container {
+	background: var(--white);
+	border-radius: 16px;
+	padding: 30px 30px;
+}
+
+.graph-container > .graph-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.graph-container > .graph-header h2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.graph-container h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 31px;
+	color: var(--todo-green);
+}
+
+.duration-container {
+	display: flex;
+	justify-content: space-between;
+    width: 15vw;
+}
+
+.duration-container p {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 34px;
+	color: var(--todo-green);
+    margin: 0;
+
+}
+.duration-container p:hover, 
+.duration-container  .isactive{
+    color: #F8B400;
+    border-bottom: 2px solid #F8B400;
+    background: transparent;
+}
+
+.duration-container .not-active{
+    color: var(--todo-green);
+}
+.graphLayout{
+    margin: 20px 10px;
+    display: flex;
+}
+.graphLayout .graph{
+    width: 100%;
+    margin-left: 20px;
+
+}
+.graphLayout .value-layout{
+    height: 330px;
+}

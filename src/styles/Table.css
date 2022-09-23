@@ -1,0 +1,49 @@
+table {
+	width: 100%;
+	margin-top: 40px;
+	border-spacing: 0;
+}
+
+tr > th {
+	color: #768396;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: left;
+	padding: 20px 10px;
+    width: 200px;
+}
+
+th {
+	border-bottom: 1px solid #e8edf1;
+}
+tbody tr >th {
+    font-size: 14px;
+        line-height: 18px;
+        color: #1E1E1E;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+progress {
+	/* accent-color: #4BA8A8; */
+}
+
+::-webkit-progress-bar {
+	background-color: #4ba8a8;
+}
+
+::-webkit-progress-value {
+	background-color: red;
+}
+
+select {
+	width: 92px;
+	height: 35px;
+	background: #e8edf1;
+	border: 1px solid #4ba8a8;
+	border-radius: 7px;
+	outline: none;
+}

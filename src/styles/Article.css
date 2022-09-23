@@ -1,0 +1,167 @@
+.calendar-container {
+	background: var(--milk);
+	width: 74px;
+	display: flex;
+	border-radius: 14.5px;
+	height: 29px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.header {
+	padding-bottom: 16px;
+}
+.between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.between svg {
+	cursor: pointer;
+}
+
+.task-container {
+	padding: 16px 0;
+	box-sizing: border-box;
+}
+.task-container p {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--green-gray);
+}
+.task-container > .emoji-container {
+	border-bottom: 2px solid #e8edf1;
+}
+.task-container > .emoji-container > .emojis > .arrows {
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.task-container > .emoji-container > .emojis {
+	width: 100%;
+}
+
+.collaborator-container {
+	margin-top: 16px;
+	display: flex;
+	justify-content: space-between;
+        border-bottom: 2px solid #e8edf1;
+}
+
+.collaborator-container > .collaborator {
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	border-radius: 17.5px;
+	padding: 0 5px;
+	width: 100px;
+	height: 34px;
+    margin-bottom: 16px;
+}
+.collaborator-container > .collaborator img {
+	border-radius: 50%;
+}
+
+.collaborator-container > .collaborator > p {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 17px;
+	color: #5051f9;
+}
+
+.collaborator-container > .collaborator:nth-child(odd) {
+	background: #e8e8ff;
+}
+
+.collaborator-container > .collaborator:nth-child(even) {
+	background: #e6f5ff;
+}
+
+.collaborator-container > .add-collaborator {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	background: #e8edf1;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.collaborator-container > .add-collaborator > span {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+    
+}
+
+.collaborator-container > .move-collaborator {
+	background: #4babab;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+}
+
+.collaborator-container >.move-collaborator > span {
+    font-size: 28px;
+     font-weight: 900;
+}
+
+.input-top{
+    margin-top: 33px;
+}
+.rule{
+    margin: 16px 0;
+    border-bottom: 2px solid #e8edf1;
+}
+
+.message-container{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+}
+.message{
+    height: 55px;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.message-container .message:nth-child(odd) {
+border:  1px solid #F1B032;
+
+}
+
+.message-container .message:nth-child(even) {
+    border: 1px solid #EDA0A8;
+}
+
+.message img{
+    border-radius: 50%;
+}
+
+.message-container p {
+    margin: 0
+}
+.calendar{
+    position: absolute;
+    top:  12px;right: 12px;
+}
+.relative{
+    position: relative;
+}
